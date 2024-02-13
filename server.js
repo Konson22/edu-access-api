@@ -10,10 +10,10 @@ const authRoute = require('./routes/auth')
 
 const app = express();
 app.use(bodyParser.json());
-app.use(cors({origin: ['http://localhost:3000', 'https://edu-access2.onrender.com/', 'https://edu-access.onrender.com'], credentials: true}));
 app.use(cookieParser());
+// app.use(cors({origin: ['http://localhost:3000', 'https://edu-access2.onrender.com/', 'https://edu-access.onrender.com'], credentials: true}));
 
-// app.use(cors({origin: '*' }));
+app.use(cors({origin: '*' }));
 
 app.use(express.static('images'));
 
