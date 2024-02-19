@@ -19,41 +19,41 @@ const getAllBooks = (req, res) => {
 module.exports = { getAllBooks }
 
 
-const citizenshipBooks =[
+const mathBooks =[
   {
       grade:'Senior 1',
-      subject:'Citizenship',
+      subject:'Mathematics',
       type:'textbook',
-      image:'books/citizenship/citizenship_1_textbook.png',
-      url:'https://eastafricaschoolserver.org/content/_public/Local%20Topics/South%20Sudan/South%20Sudan%20Secondary%20Textbooks/Secondary%20Citizenship/Secondary%20Citizenship%20Student%20Textbooks/Secondary%20Citizenship%201%20Student%20Textbook.pdf',
+      image:'books/mathematics/mathematics_1_textbook.png',
+      url:'https://eastafricaschoolserver.org/content/_public/Local%20Topics/South%20Sudan/South%20Sudan%20Secondary%20Textbooks/Secondary%20Mathematics/Secondary%20Mathematics%20Student%20Textbooks/Secondary%20Mathematics%201%20Student%20Textbook.pdf',
   },
   {
       grade:'Senior 2',
-      subject:'Citizenship',
+      subject:'Mathematics',
       type:'textbook',
-      image:'books/citizenship/citizenship_2_textbook.png',
-      url:'https://eastafricaschoolserver.org/content/_public/Local%20Topics/South%20Sudan/South%20Sudan%20Secondary%20Textbooks/Secondary%20Citizenship/Secondary%20Citizenship%20Student%20Textbooks/Secondary%20Citizenship%202%20Student%20Textbook.pdf',
+      image:'books/mathematics/mathematics_2_textbook.png',
+      url:'https://eastafricaschoolserver.org/content/_public/Local%20Topics/South%20Sudan/South%20Sudan%20Secondary%20Textbooks/Secondary%20Mathematics/Secondary%20Mathematics%20Student%20Textbooks/Secondary%20Mathematics%202%20Student%20Textbook.pdf',
   },
   {
       grade:'Senior 3',
-      subject:'Citizenship',
+      subject:'Mathematics',
       type:'textbook',
-      image:'books/citizenship/citizenship_3_textbook.png',
-      url:'https://eastafricaschoolserver.org/content/_public/Local%20Topics/South%20Sudan/South%20Sudan%20Secondary%20Textbooks/Secondary%20Citizenship/Secondary%20Citizenship%20Student%20Textbooks/Secondary%20Citizenship%203%20Student%20Textbook.pdf',
+      image:'books/mathematics/mathematics_3_textbook.png',
+      url:'https://eastafricaschoolserver.org/content/_public/Local%20Topics/South%20Sudan/South%20Sudan%20Secondary%20Textbooks/Secondary%20Mathematics/Secondary%20Mathematics%20Student%20Textbooks/Secondary%20Mathematics%203%20Student%20Textbook.pdf',
   },
   {
       grade:'Senior 4',
-      subject:'Citizenship',
+      subject:'Mathematics',
       type:'textbook',
-      image:'books/citizenship/citizenship_4_textbook.png',
-      url:'https://eastafricaschoolserver.org/content/_public/Local%20Topics/South%20Sudan/South%20Sudan%20Secondary%20Textbooks/Secondary%20Citizenship/Secondary%20Citizenship%20Student%20Textbooks/Secondary%20Citizenship%204%20Student%20Textbook.pdf',
+      image:'books/mathematics/mathematics_4_textbook.png',
+      url:'https://eastafricaschoolserver.org/content/_public/Local%20Topics/South%20Sudan/South%20Sudan%20Secondary%20Textbooks/Secondary%20Mathematics/Secondary%20Mathematics%20Student%20Textbooks/Secondary%20Mathematics%204%20Student%20Textbook.pdf',
   },
   
 ]
 
 // db.run('delete from books_db')
 
-// citizenshipBooks.forEach(book => {
+// mathBooks.forEach(book => {
 //   sql = `INSERT INTO books_db(
 //     category,
 //     grade,
