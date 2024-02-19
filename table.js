@@ -45,4 +45,20 @@ const db = new sqlite.Database("./database.db", sqlite.OPEN_READWRITE, err => er
 //     password TEXT NOT NULL
 // )`;
 
+
+// const sql = `CREATE TABLE posts(
+//     id INTEGER PRIMARY KEY, 
+//     username TEXT NOT NULL,
+//     text TEXT NOT NULL,
+//     avatar TEXT NOT NULL
+// )`;
+
+const sql = `CREATE TABLE comments_db(
+    id INTEGER PRIMARY KEY, 
+    postId INTEGER NOT NULL, 
+    username TEXT NOT NULL,
+    text TEXT NOT NULL,
+    avatar TEXT NOT NULL
+)`;
+
 db.run(sql)

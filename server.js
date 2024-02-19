@@ -6,6 +6,7 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const resultsRoute = require('./routes/resultsRoute')
 const booksRoute = require('./routes/booksRoute')
+const postRoute = require('./routes/postRoute')
 const authRoute = require('./routes/auth')
 
 const app = express();
@@ -18,6 +19,7 @@ app.use(cors({origin: '*' }));
 app.use(express.static('images'));
 
 app.use('/books', booksRoute)
+app.use('/posts', postRoute)
 app.use('/results', resultsRoute)
 app.use('/auth', authRoute)
 
