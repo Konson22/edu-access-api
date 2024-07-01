@@ -1,19 +1,13 @@
 const express = require("express");
-const { 
-    getAllUsersController, 
-    registerUser, 
-    authToken,
-    loginUser,
-    logOutUser
-} = require("../controllers/authController");
+
 const { verifyToken } = require("../midlewares/jwt");
+const { getUserCredientials, registerUser, getAllUsersController, loginUser } = require("../controllers/authController");
 
 const router = express.Router();
 
-router.get("/", verifyToken, authToken);
-router.get("/users", getAllUsersController);
-router.post("/login", loginUser);
+router.get("/", getUserCredientials);
 router.post("/register", registerUser);
-router.post("/signout", logOutUser);
+router.post("/login", loginUser);
+router.get("/students", getAllUsersController);
 
 module.exports = router;

@@ -1,7 +1,7 @@
 const {verify, sign} = require('jsonwebtoken')
 
 async function createToken(user){
-    return await sign(user, process.env.SECRET_KEY)
+    return sign(user, process.env.SECRET_KEY)
 }
 
 
